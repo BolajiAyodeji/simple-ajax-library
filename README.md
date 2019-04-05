@@ -4,10 +4,9 @@
 
 </div>
 
-# Installation Guide
-Download the main script [here]() and the minified version [here]()
+# Getting Started
+Download and include the JavaScript file ( [full version]() | [minified]() | [ES6 version() )
 
-Add this before any other script
 ```html
 <script src="simpleAjax.js"></script>
 ```
@@ -27,9 +26,6 @@ cd simple-ajax-library
 
 # Usage
 
-```js
-const http = new simpleAJAX;
-```
 
 * GET Request
 
