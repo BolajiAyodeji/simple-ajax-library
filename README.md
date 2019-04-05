@@ -9,7 +9,8 @@ In your root html file (`index.html`), add this before any other script
 ```html
 <script src="simpleAjax.js"></script>
 ```
-or
+or use the minified version
+
 ```html
 <script src="simpleAjax.min.js"></script>
 ```
