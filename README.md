@@ -5,12 +5,15 @@
 </div>
 
 # Getting Started
-Download and include the JavaScript file ( [full version]() | [minified]() | [ES6 version() )
+Download and include the JavaScript file ( [full version]() | [minified]() | [ES6 version]() )
 
 ```html
 <script src="simpleAjax.js"></script>
 ```
-or use the minified version
+
+```html
+<script src="simpleAjax-ES6.js"></script>
+```
 
 ```html
 <script src="simpleAjax.min.js"></script>
