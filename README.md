@@ -36,6 +36,7 @@ posts = http.get('https://jsonplaceholder.typicode.com/posts',
   }
 });
 ```
+<br>
 
 * POST Request
 
@@ -55,6 +56,7 @@ data, (err, post) => {
   }
 });
 ```
+<br>
 
 * PUT Request
 
@@ -74,6 +76,7 @@ data, (err, post) => {
   }
 });
 ```
+<br>
 
 * DELETE Request
 
