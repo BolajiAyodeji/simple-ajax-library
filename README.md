@@ -25,6 +25,7 @@ const http = new simpleAJAX;
 ```
 
 - GET Request
+
 ```js
 posts = http.get('https://jsonplaceholder.typicode.com/posts',
 (err, posts) => {
@@ -37,6 +38,7 @@ posts = http.get('https://jsonplaceholder.typicode.com/posts',
 ```
 
 - POST Request
+
 ```js
 const data = {
   userId: 101,
@@ -55,6 +57,7 @@ data, (err, post) => {
 ```
 
 - PUT Request
+
 ```js
 const data = {
   userId: 101,
@@ -73,6 +76,7 @@ data, (err, post) => {
 ```
 
 - DELETE Request
+
 ```js
 posts = http.delete('https://jsonplaceholder.typicode.com/posts/1',
 (err, response) => {
