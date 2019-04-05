@@ -27,6 +27,12 @@ git clone https://github.com/BolajiAyodeji/simple-ajax-library.git
 ```bash
 cd simple-ajax-library
 ```
+```bash
+npm install
+```
+```bash
+npm run build
+```
 
 # Examples
 
