@@ -10,13 +10,12 @@ Download and include the JavaScript file ( [full version]() | [minified]() | [ES
 ```html
 <script src="simpleAjax.js"></script>
 ```
-
 ```html
-<script src="simpleAjax-ES6.js"></script>
+<script src="simpleAjax.min.js"></script>
 ```
 
 ```html
-<script src="simpleAjax.min.js"></script>
+<script src="simpleAjax-ES6.js"></script>
 ```
 
 # Contribution Guide
