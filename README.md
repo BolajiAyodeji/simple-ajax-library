@@ -24,7 +24,7 @@ In your root html file (`index.html`), add this before any other script
 const http = new simpleAJAX;
 ```
 
-- GET Request
+* GET Request
 
 ```js
 posts = http.get('https://jsonplaceholder.typicode.com/posts',
@@ -37,7 +37,7 @@ posts = http.get('https://jsonplaceholder.typicode.com/posts',
 });
 ```
 
-- POST Request
+* POST Request
 
 ```js
 const data = {
@@ -56,7 +56,7 @@ data, (err, post) => {
 });
 ```
 
-- PUT Request
+* PUT Request
 
 ```js
 const data = {
@@ -75,7 +75,7 @@ data, (err, post) => {
 });
 ```
 
-- DELETE Request
+* DELETE Request
 
 ```js
 posts = http.delete('https://jsonplaceholder.typicode.com/posts/1',
