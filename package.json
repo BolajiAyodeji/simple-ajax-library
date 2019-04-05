@@ -1,0 +1,20 @@
+{
+  "name": "simple-ajax-library",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BolajiAyodeji/simple-ajax-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BolajiAyodeji/simple-ajax-library/issues"
+  },
+  "homepage": "https://github.com/BolajiAyodeji/simple-ajax-library#readme"
+}

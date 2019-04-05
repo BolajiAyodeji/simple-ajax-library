@@ -13,7 +13,7 @@ posts = http.get('https://jsonplaceholder.typicode.com/posts',
   if(err) {
     console.log(err)
   } else {
-  console.log(posts);
+  document.getElementById('test').innerHTML = posts;
   }
 });
 
