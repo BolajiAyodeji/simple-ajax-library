@@ -5,6 +5,7 @@
 </div>
 
 # Getting Started
+
 Download and include the JavaScript file ( [full version]() | [minified]() | [ES6 version]() )
 
 ```html
@@ -19,6 +20,7 @@ Download and include the JavaScript file ( [full version]() | [minified]() | [ES
 ```
 
 # Contribution Guide
+
 ```bash
 git clone https://github.com/BolajiAyodeji/simple-ajax-library.git
 ```
@@ -26,8 +28,7 @@ git clone https://github.com/BolajiAyodeji/simple-ajax-library.git
 cd simple-ajax-library
 ```
 
-# Usage
-
+# Examples
 
 * GET Request
 
