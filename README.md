@@ -1,28 +1,34 @@
 <div align="center">
   
-# simple-ajax-library
-A simple AJAX HTTP Library
+![]()
 
 </div>
 
-# Installation Guide
-```bash
-git clone https://github.com/BolajiAyodeji/simple-ajax-library.git
-```
-```bash
-rm -rf .git
-```
+# Getting Started
+Download and include the JavaScript file ( [full version]() | [minified]() | [ES6 version]() )
 
-In your root html file (`index.html`), add this before any other script
 ```html
 <script src="simpleAjax.js"></script>
 ```
 
+```html
+<script src="simpleAjax-ES6.js"></script>
+```
+
+```html
+<script src="simpleAjax.min.js"></script>
+```
+
+# Contribution Guide
+```bash
+git clone https://github.com/BolajiAyodeji/simple-ajax-library.git
+```
+```bash
+cd simple-ajax-library
+```
+
 # Usage
 
-```js
-const http = new simpleAJAX;
-```
 
 * GET Request
 
