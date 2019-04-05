@@ -1,7 +1,7 @@
 {
   "name": "simple-ajax-library",
   "version": "1.0.0",
-  "description": "<div align=\"center\">",
+  "description": "A simple Ajax HTTP Library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/BolajiAyodeji/simple-ajax-library.git"
   },
-  "keywords": [],
+  "keywords": [
+    "ajax librabry",
+    "http request",
+    "json",
+    "http library",
+    "asynchronous programming"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
