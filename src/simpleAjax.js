@@ -1,10 +1,10 @@
 
-function customAJAX() {
+function simpleAJAX() {
   this.http = new XMLHttpRequest();
 }
 
 // HTTP GET Request
-customAJAX.prototype.get = function(url, callback) {
+simpleAJAX.prototype.get = function(url, callback) {
   this.http.open('GET', url, true);
 
   this.http.onload = () => {
@@ -18,7 +18,7 @@ customAJAX.prototype.get = function(url, callback) {
 }
 
 // HTTP POST Request
-customAJAX.prototype.post = function(url, data, callback) {
+simpleAJAX.prototype.post = function(url, data, callback) {
   this.http.open('POST', url, true);
   this.http.setRequestHeader('Content-type', 'application/json');
 
@@ -29,7 +29,7 @@ customAJAX.prototype.post = function(url, data, callback) {
 }
 
 // HTTP PUT Request
-customAJAX.prototype.put = function(url, data, callback) {
+simpleAJAX.prototype.put = function(url, data, callback) {
   this.http.open('PUT', url, true);
   this.http.setRequestHeader('Content-type', 'application/json');
 
@@ -40,7 +40,7 @@ customAJAX.prototype.put = function(url, data, callback) {
 }
 
 // HTTP DELETE Request
-customAJAX.prototype.delete = function(url, callback) {
+simpleAJAX.prototype.delete = function(url, callback) {
   this.http.open('DELETE', url, true);
 
   this.http.onload = () => {

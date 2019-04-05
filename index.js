@@ -1,5 +1,5 @@
 
-const http = new customAJAX;
+const http = new simpleAJAX;
 
 const data = {
   userId: 101,
