@@ -8,7 +8,7 @@ const data = {
 };
 
 // GET request
-posts = http.get('https://jsonplaceholder.typicode.com/posts',
+posts = http.get('https://jsonplaceholder.typicode.com/users',
 (err, posts) => {
   if(err) {
     console.log(err)
