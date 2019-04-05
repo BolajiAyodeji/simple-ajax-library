@@ -5,7 +5,9 @@
 </div>
 
 # Installation Guide
-In your root html file (`index.html`), add this before any other script
+Download the main script [here]() and the minified version [here]()
+
+Add this before any other script
 ```html
 <script src="simpleAjax.js"></script>
 ```
