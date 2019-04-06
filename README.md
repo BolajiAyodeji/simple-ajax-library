@@ -19,21 +19,6 @@ Download and include the JavaScript file | [full version](https://github.com/Bol
 const http = new simpleAjax;
 ```
 
-# Contribution Guide
-
-```bash
-git clone https://github.com/BolajiAyodeji/simple-ajax-library.git
-```
-```bash
-cd simple-ajax-library
-```
-```bash
-npm install
-```
-```bash
-npm run build
-```
-
 # Examples
 
 * GET Request
@@ -135,4 +120,19 @@ users = http.delete('https://jsonplaceholder.typicode.com/users/1',
   console.log(response);
   }
 });
+```
+
+# Contribution Guide
+
+```bash
+git clone https://github.com/BolajiAyodeji/simple-ajax-library.git
+```
+```bash
+cd simple-ajax-library
+```
+```bash
+npm install
+```
+```bash
+npm run build
 ```
