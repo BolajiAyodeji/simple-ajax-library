@@ -6,6 +6,7 @@
 [![Open Source Helpers](https://www.codetriage.com/bolajiayodeji/simple-ajax-library/badges/users.svg)](https://www.codetriage.com/bolajiayodeji/simple-ajax-library)
 
 </div>
+<br>
 
 # Getting Started
 
