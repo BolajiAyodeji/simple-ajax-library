@@ -1,10 +1,10 @@
 {
   "name": "simple-ajax-library",
   "version": "1.0.0",
-  "description": "A simple Ajax HTTP Library",
+  "description": "A simple AJAX HTTP Library",
   "main": "src/simpleAjax.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/BolajiAyodeji/simple-ajax-library/issues"
   },
-  "homepage": "https://github.com/BolajiAyodeji/simple-ajax-library#readme"
+  "homepage": "https://github.com/BolajiAyodeji/simple-ajax-library#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2"
+  }
 }
