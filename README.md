@@ -40,7 +40,7 @@ users = http.get('https://jsonplaceholder.typicode.com/users',
     if(err) {
       console.log(err)
     } else {
-    display.innerHTML = users;
+    console.log(users);
     }
   });
 ```
@@ -77,7 +77,7 @@ http.post('https://jsonplaceholder.typicode.com/users',
     if(err) {
       console.log(err)
     } else {
-      display.innerHTML = user;
+      console.log(user);
     }
   });
 ```
@@ -114,7 +114,7 @@ http.put('https://jsonplaceholder.typicode.com/users/1',
     if(err) {
       console.log(err)
     } else {
-      display.innerHTML = user;
+      console.log(user);
     }
   });
 ```
@@ -128,7 +128,7 @@ users = http.delete('https://jsonplaceholder.typicode.com/users/1',
   if(err) {
     console.log(err)
   } else {
-  display.innerHTML = response;
+  console.log(response);
   }
 });
 ```
