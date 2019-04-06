@@ -1,6 +1,7 @@
 <div align="center">
   
-![simple-ajax]()
+[![made in nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=for-the-badge)](https://github.com/acekyd/made-in-nigeria)
+[![Open Source Helpers](https://www.codetriage.com/bolajiayodeji/simple-ajax-library/badges/users.svg)](https://www.codetriage.com/bolajiayodeji/simple-ajax-library)
 
 </div>
 
