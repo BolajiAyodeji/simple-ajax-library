@@ -117,6 +117,9 @@ users = http.delete('https://jsonplaceholder.typicode.com/users/1',
 });
 ```
 
+# Demo
+Demo [here](https://bolajiayodeji.github.io/simple-ajax-library/demo/)
+
 # Contribution Guide
 
 ```bash
