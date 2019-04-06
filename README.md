@@ -1,6 +1,6 @@
 <div align="center">
   
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1554540118/simple-ajax.png)
+![simple-ajax](https://res.cloudinary.com/iambeejayayo/image/upload/v1554540703/simple-ajax.png)
 
 </div>
 
