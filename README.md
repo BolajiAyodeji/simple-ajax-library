@@ -11,7 +11,7 @@ Download and include the JavaScript file | [full version](https://github.com/Bol
 ```
 > Create a new simpleAjax
 ```js
-const http = new simpleAjax;
+const http = new simpleAJAX;
 ```
 
 # Examples
