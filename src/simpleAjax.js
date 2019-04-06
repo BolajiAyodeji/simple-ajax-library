@@ -1,3 +1,11 @@
+/**
+ * simpleAjax Library
+ * A simple AJAX Library for making HTTP Requests"
+ *
+ * @version 1.0.0
+ * @author Bolaji Ayodeji
+ * @license MIT
+ */
 
 function simpleAJAX() {
   this.http = new XMLHttpRequest();
