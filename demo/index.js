@@ -1,48 +1,96 @@
 
+const button1 = document.getElementById('button1');
+const button2 = document.getElementById('button2');
+const button3 = document.getElementById('button3');
+const button4 = document.getElementById('button4');
+const display = document.getElementById('output');
+
 const http = new simpleAJAX;
 
 const data = {
-  userId: 101,
-  title: 'Custom post',
-  body: 'This is a custom post'
+    "name": "Bolaji Ayodeji",
+    "username": "bolajiayodeji",
+    "email": "hi@bolajiayodeji.com",
+    "address": {
+      "street": "Hello world",
+      "suite": "Hello",
+      "city": "Lokoja, Kogi",
+      "zipcode": "xxx-xxx-xxx",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "+234 8109445504",
+    "website": "https://bolajiayodeji.com",
+    "company": {
+      "name": "PhilanthroLab",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
 };
 
-// GET request
-posts = http.get('https://jsonplaceholder.typicode.com/users',
-(err, posts) => {
+
+// Get Request
+button1.addEventListener('click', getReq);
+
+function getReq(e) {
+  users = http.get('https://jsonplaceholder.typicode.com/users',
+  (err, users) => {
+    if(err) {
+      console.log(err)
+    } else {
+    display.innerHTML = users;
+    }
+  });
+
+  e.preventDefault();
+}
+
+// POST Request
+button2.addEventListener('click', postReq);
+
+function postReq(e) {
+  http.post('https://jsonplaceholder.typicode.com/users',
+  data, (err, post) => {
+    if(err) {
+      console.log(err)
+    } else {
+      display.innerHTML = post;
+    }
+  });
+
+  e.preventDefault();
+}
+
+// PUT Request
+button3.addEventListener('click', putReq);
+
+function putReq(e) {
+  http.put('https://jsonplaceholder.typicode.com/users/1',
+  data, (err, post) => {
+    if(err) {
+      console.log(err)
+    } else {
+      display.innerHTML = post;
+    }
+  });
+
+  e.preventDefault();
+}
+
+// DELETE Request
+button4.addEventListener('click', delReq);
+
+function delReq(e) {
+users = http.delete('https://jsonplaceholder.typicode.com/users/1',
+(err, response) => {
   if(err) {
     console.log(err)
   } else {
-  document.getElementById('test').innerHTML = posts;
+  display.innerHTML = response;
   }
 });
 
-// // POST request
-// http.post('https://jsonplaceholder.typicode.com/posts',
-// data, (err, post) => {
-//   if(err) {
-//     console.log(err)
-//   } else {
-//     console.log(post);
-//   }
-// });
-
-// // PUT request
-// http.put('https://jsonplaceholder.typicode.com/posts/1',
-// data, (err, post) => {
-//   if(err) {
-//     console.log(err)
-//   } else {
-//     console.log(post);
-//   }
-// });
-
-// // DELETE request
-// posts = http.delete('https://jsonplaceholder.typicode.com/posts/1',
-// (err, response) => {
-//   if(err) {
-//     console.log(err)
-//   } else {
-//   console.log(response);
-//   }
-// });
+  e.preventDefault();
+}

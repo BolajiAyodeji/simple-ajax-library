@@ -54,7 +54,7 @@ simpleAJAX.prototype.delete = function(url, callback) {
 
   this.http.onload = () => {
     if(this.http.status === 200) {
-      callback(null, 'Post Deleted!');
+      callback(null, 'Resource Deleted!');
     } else {
       callback('Error: ' + this.http.status);
     }
