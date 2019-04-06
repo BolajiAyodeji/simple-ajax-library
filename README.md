@@ -15,10 +15,6 @@ Download and include the JavaScript file | [full version](https://github.com/Bol
 <script src="simpleAjax.min.js"></script>
 ```
 
-```html
-<script src="simpleAjax-ES6.js"></script>
-```
-
 # Contribution Guide
 
 ```bash
