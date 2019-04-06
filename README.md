@@ -1,12 +1,3 @@
-<div align="center">
-  
-[![Made in Nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria)
-[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-red.svg?style=flat)](http://makeapullrequest.com)
-[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)
-[![Open Source Helpers](https://www.codetriage.com/bolajiayodeji/simple-ajax-library/badges/users.svg)](https://www.codetriage.com/bolajiayodeji/simple-ajax-library)
-
-</div>
-<br>
 
 # Getting Started
 
@@ -20,7 +11,7 @@ Download and include the JavaScript file | [full version](https://github.com/Bol
 ```
 > Create a new simpleAjax
 ```js
-const http = new simpleAjax;
+const http = new simpleAJAX;
 ```
 
 # Examples
@@ -125,6 +116,9 @@ users = http.delete('https://jsonplaceholder.typicode.com/users/1',
   }
 });
 ```
+
+# Demo
+Demo [here](https://bolajiayodeji.github.io/simple-ajax-library/demo/)
 
 # Contribution Guide
 
