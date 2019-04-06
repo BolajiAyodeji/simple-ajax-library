@@ -39,14 +39,14 @@ npm run build
 * GET Request
 
 ```js
-posts = http.get('https://jsonplaceholder.typicode.com/posts',
-(err, posts) => {
-  if(err) {
-    console.log(err)
-  } else {
-  console.log(posts);
-  }
-});
+users = http.get('https://jsonplaceholder.typicode.com/users',
+  (err, users) => {
+    if(err) {
+      console.log(err)
+    } else {
+    display.innerHTML = users;
+    }
+  });
 ```
 <br>
 
@@ -54,19 +54,36 @@ posts = http.get('https://jsonplaceholder.typicode.com/posts',
 
 ```js
 const data = {
-  userId: 101,
-  title: 'Custom post',
-  body: 'This is a custom post'
+    "name": "Bolaji Ayodeji",
+    "username": "bolajiayodeji",
+    "email": "hi@bolajiayodeji.com",
+    "address": {
+      "street": "Hello world",
+      "suite": "Hello",
+      "city": "Lokoja, Kogi",
+      "zipcode": "xxx-xxx-xxx",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "+234 8109445504",
+    "website": "https://bolajiayodeji.com",
+    "company": {
+      "name": "PhilanthroLab",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
 };
 
-http.post('https://jsonplaceholder.typicode.com/posts',
-data, (err, post) => {
-  if(err) {
-    console.log(err)
-  } else {
-    console.log(post);
-  }
-});
+http.post('https://jsonplaceholder.typicode.com/users',
+  data, (err, user) => {
+    if(err) {
+      console.log(err)
+    } else {
+      display.innerHTML = user;
+    }
+  });
 ```
 <br>
 
@@ -74,32 +91,48 @@ data, (err, post) => {
 
 ```js
 const data = {
-  userId: 101,
-  title: 'Custom post',
-  body: 'This is a custom post'
+    "name": "Bolaji Ayodeji",
+    "username": "bolajiayodeji",
+    "email": "hi@bolajiayodeji.com",
+    "address": {
+      "street": "Hello world",
+      "suite": "Hello",
+      "city": "Lokoja, Kogi",
+      "zipcode": "xxx-xxx-xxx",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "+234 8109445504",
+    "website": "https://bolajiayodeji.com",
+    "company": {
+      "name": "PhilanthroLab",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
 };
 
-http.put('https://jsonplaceholder.typicode.com/posts/1',
-data, (err, post) => {
-  if(err) {
-    console.log(err)
-  } else {
-    console.log(post);
-  }
-});
+http.put('https://jsonplaceholder.typicode.com/users/1',
+  data, (err, user) => {
+    if(err) {
+      console.log(err)
+    } else {
+      display.innerHTML = user;
+    }
+  });
 ```
 <br>
 
 * DELETE Request
 
 ```js
-posts = http.delete('https://jsonplaceholder.typicode.com/posts/1',
+users = http.delete('https://jsonplaceholder.typicode.com/users/1',
 (err, response) => {
   if(err) {
     console.log(err)
   } else {
-  console.log(response);
+  display.innerHTML = response;
   }
 });
 ```
-
