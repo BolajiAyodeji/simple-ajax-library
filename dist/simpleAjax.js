@@ -1,7 +1,5 @@
 "use strict";
 
-var _this = void 0;
-
 /**
  * simpleAjax Library
  * A simple AJAX Library for making HTTP Requests"
@@ -16,9 +14,11 @@ function simpleAJAX() {
 
 
 simpleAJAX.prototype.get = function (url, callback) {
-  _this.http.open('GET', url, true);
+  var _this = this;
 
-  _this.http.onload = function () {
+  this.http.open('GET', url, true);
+
+  this.http.onload = function () {
     if (_this.http.status === 200) {
       callback(null, _this.http.responseText);
     } else {
@@ -26,46 +26,50 @@ simpleAJAX.prototype.get = function (url, callback) {
     }
   };
 
-  _this.http.send();
+  this.http.send();
 }; // HTTP POST Request
 
 
 simpleAJAX.prototype.post = function (url, data, callback) {
-  _this.http.open('POST', url, true);
+  var _this2 = this;
 
-  _this.http.setRequestHeader('Content-type', 'application/json');
+  this.http.open('POST', url, true);
+  this.http.setRequestHeader('Content-type', 'application/json');
 
-  _this.http.onload = function () {
-    callback(null, _this.http.responseText);
+  this.http.onload = function () {
+    callback(null, _this2.http.responseText);
   };
 
-  _this.http.send(JSON.stringify(data));
+  this.http.send(JSON.stringify(data));
 }; // HTTP PUT Request
 
 
 simpleAJAX.prototype.put = function (url, data, callback) {
-  _this.http.open('PUT', url, true);
+  var _this3 = this;
 
-  _this.http.setRequestHeader('Content-type', 'application/json');
+  this.http.open('PUT', url, true);
+  this.http.setRequestHeader('Content-type', 'application/json');
 
-  _this.http.onload = function () {
-    callback(null, _this.http.responseText);
+  this.http.onload = function () {
+    callback(null, _this3.http.responseText);
   };
 
-  _this.http.send(JSON.stringify(data));
+  this.http.send(JSON.stringify(data));
 }; // HTTP DELETE Request
 
 
 simpleAJAX.prototype.delete = function (url, callback) {
-  _this.http.open('DELETE', url, true);
+  var _this4 = this;
 
-  _this.http.onload = function () {
-    if (_this.http.status === 200) {
+  this.http.open('DELETE', url, true);
+
+  this.http.onload = function () {
+    if (_this4.http.status === 200) {
       callback(null, 'Post Deleted!');
     } else {
-      callback('Error: ' + _this.http.status);
+      callback('Error: ' + _this4.http.status);
     }
   };
 
-  _this.http.send();
+  this.http.send();
 };

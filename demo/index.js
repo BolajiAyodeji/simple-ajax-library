@@ -17,32 +17,32 @@ posts = http.get('https://jsonplaceholder.typicode.com/users',
   }
 });
 
-// POST request
-http.post('https://jsonplaceholder.typicode.com/posts',
-data, (err, post) => {
-  if(err) {
-    console.log(err)
-  } else {
-    console.log(post);
-  }
-});
+// // POST request
+// http.post('https://jsonplaceholder.typicode.com/posts',
+// data, (err, post) => {
+//   if(err) {
+//     console.log(err)
+//   } else {
+//     console.log(post);
+//   }
+// });
 
-// PUT request
-http.put('https://jsonplaceholder.typicode.com/posts/1',
-data, (err, post) => {
-  if(err) {
-    console.log(err)
-  } else {
-    console.log(post);
-  }
-});
+// // PUT request
+// http.put('https://jsonplaceholder.typicode.com/posts/1',
+// data, (err, post) => {
+//   if(err) {
+//     console.log(err)
+//   } else {
+//     console.log(post);
+//   }
+// });
 
-// DELETE request
-posts = http.delete('https://jsonplaceholder.typicode.com/posts/1',
-(err, response) => {
-  if(err) {
-    console.log(err)
-  } else {
-  console.log(response);
-  }
-});
+// // DELETE request
+// posts = http.delete('https://jsonplaceholder.typicode.com/posts/1',
+// (err, response) => {
+//   if(err) {
+//     console.log(err)
+//   } else {
+//   console.log(response);
+//   }
+// });
