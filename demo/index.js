@@ -5,8 +5,6 @@ const button3 = document.getElementById('button3');
 const button4 = document.getElementById('button4');
 const display = document.getElementById('output');
 
-const http = new simpleAJAX;
-
 const data = {
     "name": "Bolaji Ayodeji",
     "username": "bolajiayodeji",
@@ -30,6 +28,7 @@ const data = {
     }
 };
 
+const http = new simpleAJAX;
 
 // Get Request
 button1.addEventListener('click', getReq);
@@ -52,11 +51,11 @@ button2.addEventListener('click', postReq);
 
 function postReq(e) {
   http.post('https://jsonplaceholder.typicode.com/users',
-  data, (err, post) => {
+  data, (err, user) => {
     if(err) {
       console.log(err)
     } else {
-      display.innerHTML = post;
+      display.innerHTML = user;
     }
   });
 
@@ -68,11 +67,11 @@ button3.addEventListener('click', putReq);
 
 function putReq(e) {
   http.put('https://jsonplaceholder.typicode.com/users/1',
-  data, (err, post) => {
+  data, (err, user) => {
     if(err) {
       console.log(err)
     } else {
-      display.innerHTML = post;
+      display.innerHTML = user;
     }
   });
 
