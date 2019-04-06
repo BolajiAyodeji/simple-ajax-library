@@ -3,7 +3,10 @@ const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
 const button4 = document.getElementById('button4');
-const display = document.getElementById('output');
+const outputGet = document.getElementById('output-get');
+const outputPost = document.getElementById('output-post');
+const outputPut = document.getElementById('output-put');
+const outputDelete = document.getElementById('output-delete');
 
 const data = {
     "name": "Bolaji Ayodeji",
@@ -39,7 +42,7 @@ function getReq(e) {
     if(err) {
       console.log(err)
     } else {
-    display.innerHTML = users;
+    outputGet.innerHTML = `<pre><code>${users}</code></pre>`;
     }
   });
 
@@ -55,7 +58,7 @@ function postReq(e) {
     if(err) {
       console.log(err)
     } else {
-      display.innerHTML = user;
+      outputPost.innerHTML = `<pre><code>${user}</code></pre>`;
     }
   });
 
@@ -71,7 +74,7 @@ function putReq(e) {
     if(err) {
       console.log(err)
     } else {
-      display.innerHTML = user;
+      outputPut.innerHTML = `<pre><code>${user}</code></pre>`;
     }
   });
 
@@ -87,7 +90,7 @@ users = http.delete('https://jsonplaceholder.typicode.com/users/1',
   if(err) {
     console.log(err)
   } else {
-  display.innerHTML = response;
+  outputDelete.innerHTML = `<pre><code>${response}</code></pre>`;;
   }
 });
 
