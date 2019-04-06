@@ -31,7 +31,7 @@ const data = {
     }
 };
 
-const http = new simpleAJAX;
+const http = new simpleAJAX();
 
 // Get Request
 button1.addEventListener('click', getReq);
