@@ -4,7 +4,7 @@
   "description": "A simple AJAX HTTP Library",
   "main": "src/simpleAjax.js",
   "scripts": {
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist -w"
   },
   "repository": {
     "type": "git",

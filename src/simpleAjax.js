@@ -7,12 +7,13 @@
  * @license MIT
  */
 
+
 function simpleAJAX() {
   this.http = new XMLHttpRequest();
 }
 
 // HTTP GET Request
-simpleAJAX.prototype.get = function(url, callback) {
+simpleAJAX.prototype.get = (url, callback) => {
   this.http.open('GET', url, true);
 
   this.http.onload = () => {
@@ -26,7 +27,7 @@ simpleAJAX.prototype.get = function(url, callback) {
 }
 
 // HTTP POST Request
-simpleAJAX.prototype.post = function(url, data, callback) {
+simpleAJAX.prototype.post = (url, data, callback) => {
   this.http.open('POST', url, true);
   this.http.setRequestHeader('Content-type', 'application/json');
 
@@ -37,7 +38,7 @@ simpleAJAX.prototype.post = function(url, data, callback) {
 }
 
 // HTTP PUT Request
-simpleAJAX.prototype.put = function(url, data, callback) {
+simpleAJAX.prototype.put = (url, data, callback) => {
   this.http.open('PUT', url, true);
   this.http.setRequestHeader('Content-type', 'application/json');
 
@@ -48,7 +49,7 @@ simpleAJAX.prototype.put = function(url, data, callback) {
 }
 
 // HTTP DELETE Request
-simpleAJAX.prototype.delete = function(url, callback) {
+simpleAJAX.prototype.delete = (url, callback) => {
   this.http.open('DELETE', url, true);
 
   this.http.onload = () => {
