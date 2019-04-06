@@ -6,7 +6,7 @@
 
 # Getting Started
 
-Download and include the JavaScript file | [full version]() | [minified]() | [ES6 version]() |
+Download and include the JavaScript file | [full version](https://github.com/BolajiAyodeji/simple-ajax-library/blob/master/dist/simpleAjax.js) | [minified](https://github.com/BolajiAyodeji/simple-ajax-library/blob/master/dist/simpleAjax.min.js) | [ES6 version](https://github.com/BolajiAyodeji/simple-ajax-library/blob/master/src/simpleAjax.js) |
 
 ```html
 <script src="simpleAjax.js"></script>
