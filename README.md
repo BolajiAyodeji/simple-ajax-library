@@ -9,7 +9,7 @@ Download and include the JavaScript file | [full version](https://github.com/Bol
 ```html
 <script src="simpleAjax.min.js"></script>
 ```
-> Create a new simpleAjax
+ Create a new simpleAjax
 ```js
 const http = new simpleAJAX;
 ```
